@@ -319,7 +319,7 @@ button .navbar-toggler{
     margin: auto;
 }
 
-.mult-services .container .card{
+.mult-services .card{
     background-color: #beeef6;
     background-size: auto;
     padding: 15px;
@@ -524,6 +524,3 @@ footer .container h2{
         padding: 50px 25px;
     }
 }
-
-
-
