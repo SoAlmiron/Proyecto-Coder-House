@@ -1,0 +1,33 @@
+/*About Me*/
+.aboutme .container{
+    padding: 90px 0px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2{
+        font-size: 2em;
+        text-align:center;
+        color: #734f7d;
+        text-shadow: 2px 2px 1px darkgray;
+        padding: 35px 0px;
+    }
+
+    p{
+        font-size: 1.2em;
+        text-align:justify;
+    }
+
+}
+
+.aboutme .img-container img{
+    width: 70%;
+    border-radius: 200%;
+    padding: 10px;
+    display:flex;
+    margin: auto;
+}
+
+.aboutme .text-container{
+    padding: 25px;
+}

@@ -1,0 +1,95 @@
+/*Form contact*/
+.container-contact {
+    padding: 120px 0px;
+    justify-content: center;
+
+    form{
+        width: 440px;
+        height: 500px;
+        background: whitesmoke;
+        border-radius: 8px;
+        box-shadow: 0 0 40px -0px #000;
+        margin: 2.5%;
+        padding: 20px 30px;
+        max-width: 95%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    form .titlec{
+        font-size: 1.3em;
+        padding-bottom: 10px;
+        width: 250px;
+        color: gray;
+        border-bottom: 3px solid black;
+    }
+
+    form div input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+
+    form div input:focus{
+        border-bottom: 2px solid lightpink;
+    }
+
+    form div textarea{
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+    
+    form div textarea:focus{
+        border-bottom: 2px solid lightpink;
+    }
+    
+    form div label{
+        display: block;
+        margin: 20px 0 0;
+        font-size: 1em;
+        color: rgb(77, 74, 74);
+    }
+
+
+
+
+}
+
+.contacto-datos {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.titulo-seccion{
+    text-align: center;
+}
+
+.contacto-datos p { 
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.coloricon-contacto {
+    color: #8d6cc2;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
