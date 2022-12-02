@@ -1,0 +1,50 @@
+/*Footer*/
+footer{
+    background-color: $color-footer;
+    margin: 0;
+
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        .box figure img{
+            width: 90px;
+            padding-top: 20%;
+        }
+        
+        .box p{
+            color: #000;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        h2{
+            color:black;
+            font-size: $font-medium;
+            margin-bottom: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .fa {
+            text-decoration: none;
+            width: 60px;
+            text-align: center;
+        }
+        
+        .coloricon-redes{
+            color: black;
+        }
+        
+        .coloricon-redes:hover{
+            color: $color-shade;
+        }
+    }
+    
+}
+

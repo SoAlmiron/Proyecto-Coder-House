@@ -1,0 +1,42 @@
+//Font
+$font-small: 0.9em;
+$font-medium: 1.1em;
+$font-big: 2.8em;
+$title: 2.2em;
+$subtitle: 1.5em;
+$font-google: 'Solway', serif;
+
+//Media Querys
+$screen-desktop: 1024px;
+$screen-mobile: 768px;
+
+//Colors
+$color-principal: #f8d7d7;
+$color-second: #be99ca;
+$color-third: #fff8ead4;
+$color-fourth: #734f7d;
+$color-shade: rgb(220, 156, 190);
+$color-footer: #F0F0F0;
+
+//Mixins
+
+@mixin img-flex-auto {
+    display:flex;
+    margin: auto;
+}
+
+@mixin container-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-center-column{
+    @include container-flex-center;
+    flex-direction: column;
+}
+

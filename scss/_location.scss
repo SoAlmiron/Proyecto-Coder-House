@@ -2,19 +2,16 @@
 .location .container{
     padding: 80px 0px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
 
     h2{
         padding: 20px 0px;
-        font-size: 2em;
         text-align:center;
-        color: #541765;
+        color: $color-fourth;
         text-shadow: 2px 2px 1px darkgray;
     }
 
     p{
-        font-size: 1.2em;
+        font-size: $font-medium;
         text-align: justify;
         padding: 15px 3px;
     }

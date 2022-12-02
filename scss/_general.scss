@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-google;
+}
+
+body{
+    background-color: $color-principal;
+} 
+
+.container{
+    @include flex-center-column;
+}
+
+ul{
+    list-style: none;
+    display:contents;
+}
+
+h1{
+    font-size: $font-big;
+}
+
+h2{
+    font-size: $title;
+}
+
+h3{
+    font-size: $subtitle;
+}
+
+p{
+    font-size: $font-small;
+}

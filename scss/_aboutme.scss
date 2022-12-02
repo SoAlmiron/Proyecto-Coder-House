@@ -1,20 +1,16 @@
 /*About Me*/
 .aboutme .container{
     padding: 90px 0px;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
 
     h2{
-        font-size: 2em;
         text-align:center;
-        color: #734f7d;
+        color: $color-fourth;
         text-shadow: 2px 2px 1px darkgray;
         padding: 35px 0px;
     }
 
     p{
-        font-size: 1.2em;
+        font-size: $font-medium;
         text-align:justify;
     }
 
@@ -24,8 +20,7 @@
     width: 70%;
     border-radius: 200%;
     padding: 10px;
-    display:flex;
-    margin: auto;
+    @include img-flex-auto;
 }
 
 .aboutme .text-container{

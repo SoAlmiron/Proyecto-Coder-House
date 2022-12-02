@@ -14,17 +14,16 @@
         max-width: 95%;
         box-sizing: border-box;
         position: relative;
-    }
-
-    form .titlec{
-        font-size: 1.3em;
+    
+    .titlec{
+        font-size: $subtitle;
         padding-bottom: 10px;
-        width: 250px;
+        width: 300px;
         color: gray;
-        border-bottom: 3px solid black;
+        border-bottom: 2.2px solid rgb(112, 112, 112);
     }
 
-    form div input{
+    div input, textarea{
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
@@ -35,61 +34,43 @@
         transition: all .3s;
         border-bottom: 2px solid grey;
     }
-
-    form div input:focus{
-        border-bottom: 2px solid lightpink;
-    }
-
-    form div textarea{
-        width: 100%;
+    div textarea{
         height: 120px;
-        padding: 10px;
-        box-sizing: border-box;
-        background: none;
-        outline: none;
-        resize: none;
-        border: 0;
-        transition: all .3s;
-        border-bottom: 2px solid grey;
     }
     
-    form div textarea:focus{
-        border-bottom: 2px solid lightpink;
+    div input:focus, textarea:focus{
+        border-bottom: 2px solid $color-shade;
     }
     
-    form div label{
+    div label{
         display: block;
         margin: 20px 0 0;
-        font-size: 1em;
+        font-size: $font-small;
         color: rgb(77, 74, 74);
     }
-
-
-
-
+}
 }
 
 .contacto-datos {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: $font-medium;
     padding: 20px;
+
+    p { 
+        margin-top: 10px;
+        font-weight: bold;
+    }
 }
 
 .titulo-seccion{
     text-align: center;
 }
 
-.contacto-datos p { 
-    margin-top: 10px;
-    font-weight: bold;
-}
-
 .coloricon-contacto {
-    color: #8d6cc2;
+    color: $color-fourth;
 }
 
 .container-form{
-    display: flex;
-    justify-content: center;
+    @include container-flex-center;
     padding-top: 30px;
 }

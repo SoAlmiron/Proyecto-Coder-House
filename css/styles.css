@@ -1,17 +1,168 @@
-/*About Me*/
-.aboutme .container {
-  padding: 90px 0px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Solway", serif; }
+
+body {
+  background-color: #f8d7d7; }
+
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+ul {
+  list-style: none;
+  display: contents; }
+
+h1 {
+  font-size: 2.8em; }
+
+h2 {
+  font-size: 2.2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+p {
+  font-size: 0.9em; }
+
+/*Nav Bar*/
+header {
+  background-color: white; }
+  header nav .nav-link {
+    padding: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em; }
+  header nav .nav-link:hover {
+    color: #9f55b4; }
+
+button .navbar-toggler {
+  color: #000;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425); }
+
+/*Footer*/
+footer {
+  background-color: #F0F0F0;
+  margin: 0; }
+  footer .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; }
+    footer .container .box figure img {
+      width: 90px;
+      padding-top: 20%; }
+    footer .container .box p {
+      color: #000;
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 30px; }
+    footer .container h2 {
+      color: black;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      text-align: center;
+      margin: 20px; }
+    footer .container .fa {
+      text-decoration: none;
+      width: 60px;
+      text-align: center; }
+    footer .container .coloricon-redes {
+      color: black; }
+    footer .container .coloricon-redes:hover {
+      color: #dc9cbe; }
+
+/*Home*/
+.carousel, .carousel-inner, .carousel-item {
+  max-width: 700px;
+  padding-bottom: 10px; }
+
+.div-outerheader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px; }
+  .div-outerheader a {
+    padding-top: 20px; }
+  .div-outerheader .contact-button {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.425);
+    background-color: rgba(31, 30, 30, 0.222); }
+
+.title-head {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.723); }
+
+.animate__zoomIn {
+  animation-name: zoomIn; }
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.contact-button, .service-buttom {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425);
+  background-color: #f8d7d7;
+  max-width: 230px;
+  max-height: 80px;
+  text-align: center; }
+
+.contact-button:hover, .service-buttom:hover {
+  background-color: #be99ca;
+  color: white; }
+
+.services {
+  background-color: #fff8ead4;
+  color: whitesmoke;
+  text-align: center; }
+  .services .container {
+    padding: 100px 0px; }
+  .services h2 {
+    color: black;
+    padding-bottom: 40px; }
+  .services h3 {
+    padding: 25px; }
+  .services p {
+    display: none; }
+  .services .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 60px;
+    margin: 12px;
+    border-radius: 50px; }
+  .services .carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/manicura2.jpg"); }
+  .services .carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/esmaltado2.jpg"); }
+  .services .carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/pedicura2.jpg"); }
+
+/*About Me*/
+.aboutme .container {
+  padding: 90px 0px; }
   .aboutme .container h2 {
-    font-size: 2em;
     text-align: center;
     color: #734f7d;
     text-shadow: 2px 2px 1px darkgray;
     padding: 35px 0px; }
   .aboutme .container p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify; }
 
 .aboutme .img-container img {
@@ -39,57 +190,45 @@
     max-width: 95%;
     box-sizing: border-box;
     position: relative; }
-  .container-contact form .titlec {
-    font-size: 1.3em;
-    padding-bottom: 10px;
-    width: 250px;
-    color: gray;
-    border-bottom: 3px solid black; }
-  .container-contact form div input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    transition: all .3s;
-    border-bottom: 2px solid grey; }
-  .container-contact form div input:focus {
-    border-bottom: 2px solid lightpink; }
-  .container-contact form div textarea {
-    width: 100%;
-    height: 120px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    transition: all .3s;
-    border-bottom: 2px solid grey; }
-  .container-contact form div textarea:focus {
-    border-bottom: 2px solid lightpink; }
-  .container-contact form div label {
-    display: block;
-    margin: 20px 0 0;
-    font-size: 1em;
-    color: #4d4a4a; }
+    .container-contact form .titlec {
+      font-size: 1.5em;
+      padding-bottom: 10px;
+      width: 300px;
+      color: gray;
+      border-bottom: 2.2px solid #707070; }
+    .container-contact form div input, .container-contact form textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      resize: none;
+      border: 0;
+      transition: all .3s;
+      border-bottom: 2px solid grey; }
+    .container-contact form div textarea {
+      height: 120px; }
+    .container-contact form div input:focus, .container-contact form textarea:focus {
+      border-bottom: 2px solid #dc9cbe; }
+    .container-contact form div label {
+      display: block;
+      margin: 20px 0 0;
+      font-size: 0.9em;
+      color: #4d4a4a; }
 
 .contacto-datos {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1em;
   padding: 20px; }
+  .contacto-datos p {
+    margin-top: 10px;
+    font-weight: bold; }
 
 .titulo-seccion {
   text-align: center; }
 
-.contacto-datos p {
-  margin-top: 10px;
-  font-weight: bold; }
-
 .coloricon-contacto {
-  color: #8d6cc2; }
+  color: #734f7d; }
 
 .container-form {
   display: flex;
@@ -99,17 +238,14 @@
 /*Location*/
 .location .container {
   padding: 80px 0px;
-  margin: auto;
-  display: flex;
-  flex-direction: column; }
+  margin: auto; }
   .location .container h2 {
     padding: 20px 0px;
-    font-size: 2em;
     text-align: center;
-    color: #541765;
+    color: #734f7d;
     text-shadow: 2px 2px 1px darkgray; }
   .location .container p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
     padding: 15px 3px; }
 
@@ -127,206 +263,38 @@
   width: 100%;
   max-width: 1200px;
   padding: 100px 0px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: auto; }
+  .mult-services .container .title-head {
+    padding-bottom: 55px; }
 
 .mult-services .card {
-  background-color: #beeef6;
+  display: flex;
+  align-items: center;
+  background-color: #fff8ead4;
   background-size: auto;
   padding: 15px;
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 40px -10px #000; }
   .mult-services .card img {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    display: flex;
-    margin: auto;
-    margin-top: 10px; }
+    width: 55%;
+    height: 55%;
+    border-radius: 50%; }
   .mult-services .card h3 {
     text-align: center;
-    font-size: 1.4em;
     color: black;
-    padding: 25px; }
-  .mult-services .card ul {
-    list-style: none;
-    display: contents; }
+    padding: 20px; }
   .mult-services .card li {
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-align: left;
     margin: 10px; }
   .mult-services .card p {
-    font-size: 1.2em;
     text-align: justify;
     margin: 10px; }
 
 .mult-services .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 40px -10px #000; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-
-body {
-  background-color: #ffede7df; }
-
-.container {
-  max-width: 1400px; }
-
-button {
-  color: #000;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425);
-  background-color: #FFCACA;
-  max-width: 110px;
-  max-height: 50px;
-  text-align: center; }
-
-button:hover {
-  background-color: #734f7d;
-  color: #F0F0F0; }
-
-/*Nav Bar*/
-header {
-  background-color: white; }
-
-header nav .nav-link {
-  padding: 2px;
-  font-weight: 500;
-  text-decoration: none;
-  color: black;
-  font-size: 1em; }
-
-header nav .nav-link:hover {
-  color: #9f55b4; }
-
-button .navbar-toggler {
-  color: #000;
-  padding: 10px 30px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425); }
-
-/*Home*/
-.outer-header .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.carousel-item {
-  max-height: 80vh; }
-
-.carousel-item img {
-  max-width: 2500px; }
-
-.title-head {
-  text-align: center;
-  padding: 80px;
-  font-size: 3em;
-  color: rgba(0, 0, 0, 0.723); }
-
-.animate__zoomIn {
-  animation-name: zoomIn; }
-
-.animate__animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.contact-button {
-  font-size: 1.2em;
-  max-width: 230px;
-  max-height: 80px;
-  text-align: center; }
-
-.services {
-  background-color: #FFF8EA;
-  color: whitesmoke;
-  text-align: center; }
-
-.services .container {
-  padding: 100px 0px; }
-
-.services h2 {
-  color: #000;
-  font-size: 2em;
-  padding-bottom: 40px; }
-
-.services h3 {
-  font-size: 1.5em;
-  padding: 25px; }
-
-.services p {
-  display: none; }
-
-.services .carta {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 60px;
-  margin: 12px;
-  border-radius: 50px; }
-
-.carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/manicura2.jpg"); }
-
-.carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/esmaltado2.jpg"); }
-
-.carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../img/pedicura2.jpg"); }
-
-/*Footer*/
-footer {
-  background-color: #F0F0F0;
-  margin: 0; }
-
-footer .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; }
-
-footer .container .box figure img {
-  width: 90px;
-  padding-top: 20%; }
-
-footer .container .box p {
-  color: #000;
-  font-size: 15px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 30px; }
-
-footer .container h2 {
-  color: black;
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin: 20px; }
-
-.fa {
-  text-decoration: none;
-  width: 50px;
-  text-align: center; }
-
-.coloricon-redes {
-  color: black; }
-
-.coloricon-redes:hover {
-  color: #dc9cbe; }
 
 @media screen and (max-width: 768px) {
   footer .container {
@@ -335,11 +303,20 @@ footer .container h2 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px; }
-  footer .container img {
-    display: flex;
-    margin: auto; } }
+    footer .container img {
+      display: flex;
+      margin: auto; } }
 
 @media screen and (min-width: 1024px) {
+  .outer-header .container {
+    flex-direction: row-reverse;
+    margin: 50px;
+    padding: 30px 0px; }
+  .outer-header .div-outerheader {
+    padding: 0px;
+    padding-left: 150px; }
+  .outer-header .carousel, .outer-header .carousel-inner, .outer-header .carousel-item {
+    width: 800px; }
   .services .container-services {
     display: flex;
     justify-content: center; }
@@ -361,17 +338,13 @@ footer .container h2 {
     padding-right: 25px;
     padding-left: 25px;
     margin: 50px; }
-  .mult-services .container .manicurie {
+  .mult-services .container .manicurie, .mult-services .container .pedicurie {
     display: flex;
-    margin: auto;
-    flex-direction: row; }
-  .mult-services .container .pedicurie {
-    display: flex;
-    margin: auto;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: auto; }
   .mult-services .container .card {
     width: 100%;
-    height: 640px; }
+    height: 550px; }
   .mult-services .container img {
     width: 200px;
     height: 200px; }
@@ -379,16 +352,15 @@ footer .container h2 {
     margin: 15px;
     display: flex;
     flex-direction: row; }
+    .location .container p {
+      text-align: center;
+      padding: 15px; }
   .location .card {
     width: 100%; }
   .location .map-location {
     width: 100%;
     height: 100%;
     align-content: center; }
-  .location .container p {
-    font-size: 1em;
-    text-align: center;
-    padding: 15px; }
   .contacto-datos {
     display: flex;
     flex-direction: row;

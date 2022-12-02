@@ -1,0 +1,116 @@
+@media screen and (max-width: $screen-mobile){
+    footer .container{
+        width: 90%;
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+        img{
+            @include img-flex-auto;
+        }
+    }
+}
+
+@media screen and (min-width:$screen-desktop){
+
+    .outer-header {
+    .container{
+        flex-direction:row-reverse;
+        margin: 50px;
+        padding: 30px 0px;
+    }
+    .div-outerheader{
+        padding: 0px;
+        padding-left: 150px;
+    }
+
+    .carousel, .carousel-inner, .carousel-item{
+        width: 800px;
+    }
+}
+    .services {
+        .container-services{
+        @include container-flex-center;
+        }
+
+        .carta{
+            width: 2000px;
+            height: 400px;
+        }
+    
+        p{
+            display: block;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .aboutme {
+        .container{
+        @include flex-row;
+        margin: 0px 35px;
+        }
+
+        .text-container{
+        text-align: initial;
+        margin: 40px;
+        }
+
+        .img-container img{
+        width: 330px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin: 50px;
+        }
+}
+
+    .mult-services .container {
+        .manicurie, .pedicurie{
+        @include flex-row;
+        margin: auto;
+        }
+
+        .card{
+        width: 100%;
+        height: 550px;
+        }
+
+        img{
+        width: 200px;
+        height: 200px;
+        }
+    }
+
+    .location {
+        .container{
+        margin: 15px;
+        @include flex-row;
+            p{
+            text-align: center;
+            padding: 15px;
+            }
+        }
+
+        .card{
+        width: 100%;
+        }
+
+        .map-location{
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        }
+    }
+
+.contacto-datos{
+    @include flex-row;
+    padding: 10px;
+}
+
+    .container-contact form{
+        width: 540px;
+        height: 550px;
+        padding: 50px 25px;
+    }
+}
