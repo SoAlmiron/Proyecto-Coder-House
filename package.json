@@ -2,6 +2,7 @@
   "name": "preentrega---almiron-sofia",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "This web page is designed to show the work of a friend and the services she provides.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
@@ -205,6 +206,5 @@
     "yallist": "^4.0.0",
     "yargs": "^17.6.2",
     "yargs-parser": "^20.2.9"
-  },
-  "description": "This web page is designed to show the work of a friend and the services she provides."
+  }
 }
