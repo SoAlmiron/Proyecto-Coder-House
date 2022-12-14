@@ -17,7 +17,7 @@
 }
 
 .aboutme .img-container img{
-    width: 70%;
+    max-width: 400px;
     border-radius: 200%;
     padding: 10px;
     @include img-flex-auto;

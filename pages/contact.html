@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
 
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,10 +30,9 @@
 </head>
 
 <body>
-
     <!--NavBar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img class="d-inline-block aling-top" src="../img/2-removebg-preview.png" alt="Logo-nails"
@@ -55,9 +58,9 @@
     <!--Form to contact-->
     <section id="contact" class="container-contact">
         <div class="container">
-            <h1 class="titulo-seccion">CONTACTO</h1>
+            <h1 class="titulo-seccion wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">CONTACTO</h1>
             <div class="container-info">
-                <div class="contacto-datos">
+                <div class="contacto-datos wow bounceInRight" data-wow-duration="3s">
                     <div class="col-md">
                         <i class="coloricon-contacto fa-3x fa fa-phone"></i>
                         <p>Tel Fijo: (387)-1234343</p>
@@ -69,7 +72,7 @@
                     </div>
                 </div>
                 <hr class="linea">
-                <div class="container-form">
+                <div class="container-form wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s">
                     <form>
                         <h2 class="titlec">Dejanos un mensaje</h2>
                         <div class="form-name">
@@ -90,7 +93,9 @@
                     </form>
                 </div>
             </div>
+        </div>
     </section>
+</body>
 
     <!--Footer-->
     <footer>

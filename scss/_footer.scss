@@ -4,7 +4,6 @@ footer{
     margin: 0;
 
     .container{
-        width: 100%;
         max-width: 1200px;
         margin: auto;
         display: grid;
@@ -35,6 +34,7 @@ footer{
             text-decoration: none;
             width: 60px;
             text-align: center;
+            font-size: 25px;
         }
         
         .coloricon-redes{
